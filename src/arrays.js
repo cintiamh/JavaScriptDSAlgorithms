@@ -22,5 +22,14 @@ export default () => {
   numbers.unshift(-1);
   numbers.unshift(-3, -2);
 
+  // remove from end of array:
+  numbers.pop();
+  // remove from beginning of array:
+  numbers.shift();
+
+  numbers.splice(5, 3);
+
+  numbers.splice(5, 0, 2, 3, 4);
+
   console.log(numbers);
 };
